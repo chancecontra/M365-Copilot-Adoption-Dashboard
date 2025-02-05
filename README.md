@@ -4,7 +4,7 @@ Power BI Adoption Dashboard for M365 Copilot
 ## Functionalities
 ## Setup Instructions
 ### Registration of Graph API app
-1. Sign in to the [Azure portal](https://portal.azure.com/). (/Images/Setup1.png)
+1. Sign in to the [Azure portal](https://portal.azure.com/). ![alt text](/Images/Setup1.png)
 2. 3. Go to Microsoft Entra ID > App registrations. Screenshot showing the Entra app registration.
    <picture>/images/Setup1.png</picture>
 4. Select + New Registration.
