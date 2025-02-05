@@ -3,6 +3,11 @@ Power BI Adoption Dashboard for M365 Copilot
 ## What it is?
 ## Functionalities
 ## Setup Instructions
+You need to do following steps:
+1. Register Graph API app
+2. Install latest version of Power BI desktop and configure it
+3. Download and run template
+
 ### Registration of Graph API app
 1. Sign in to the [Azure portal](https://portal.azure.com/).
    (For these actions you need at least Cloud Application Administrator role.)
@@ -24,5 +29,11 @@ Power BI Adoption Dashboard for M365 Copilot
 ![Screenshot showing tenant ID and client ID.](/Images/Setup5.png)
 
 ### Latest Version of Power BI Desktop
-1. You can download it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=58494&msockid=3d302a18b1e16b4b0f433bb7b5e16d2d)
+1. If you don't have it, you can download it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=58494&msockid=3d302a18b1e16b4b0f433bb7b5e16d2d)
+2. Once installed start Power BI desktop. Go to **File > Options and Settings > Options**
+3. Enable **Text Slicer Visual** under **Preview features** (you will have to restart app)
+4. ![Screenshot showing Power BI configuration.](/Images/Setup6.png)
+
+### Download and run the template (.pbit)
+
 ## Known Issues
