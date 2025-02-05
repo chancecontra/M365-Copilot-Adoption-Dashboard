@@ -8,7 +8,7 @@ You need to do following steps:
 2. Install latest version of Power BI desktop and configure it
 3. Download and run template
 
-### Registration of Graph API app
+### 1. Registration of Graph API app
 1. Sign in to the [Azure portal](https://portal.azure.com/).
    (For these actions you need at least Cloud Application Administrator role.)
 3. Go to **Microsoft Entra ID > App registrations**. 
@@ -28,12 +28,12 @@ You need to do following steps:
 13. Select **Overview** and copy and paste the application (client) ID and Directory (tenant) ID value to the same text document. Be sure to make a note of which GUID is for which value.
 ![Screenshot showing tenant ID and client ID.](/Images/Setup5.png)
 
-### Latest Version of Power BI Desktop
+### 2. Get Latest Version of Power BI Desktop and configure
 1. If you don't have it, you can download it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=58494&msockid=3d302a18b1e16b4b0f433bb7b5e16d2d)
 2. Once installed start Power BI desktop. Go to **File > Options and Settings > Options**
 3. Enable **Text Slicer Visual** under **Preview features** (you will have to restart app)
-4. ![Screenshot showing Power BI configuration.](/Images/Setup6.png)
+![Screenshot showing Power BI configuration.](/Images/Setup6.png)
 
-### Download and run the template (.pbit)
+### 3. Download and run the template (.pbit)
 
 ## Known Issues
