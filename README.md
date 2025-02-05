@@ -4,6 +4,7 @@ Developed by [Sead Borovina](www.linkedin.com/in/seadb)
 ## What it is?
 This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to grab data from your M365 tenant.<br/> Some organizations, for various reasons, found existing reports in M365 Admin Portal, Viva insights or Copilot Dashboard not suitable for the purpose of driving adoption, hence there was the need for the custom dashboard. I developed this dashboard working with organizations that were in this position, and needed insights on the adoption of M365 Copilot. Feedback and requirements provided by those organizations have been used as an input for the dashboard, within restrictions that provide Graph API at the moment.
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
+Please provide your feedback or ideas via this form. 
 ## Functionalities
 ## Setup Instructions
 You need to do following steps:
