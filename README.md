@@ -2,7 +2,7 @@
 Power BI Adoption Dashboard for M365 Copilot.<br/>
 Developed by [Sead Borovina](www.linkedin.com/in/seadb)
 ## What it is?
-This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to grab data from your M365 tenant.<br/> Some organizations, for various reasons, found existing reports in M365 Admin Portal, Viva insights or Copilot Dashboard not suitable for the purpose of driving adoption, hence there was the need for the custom dashboard. I developed this dashboard working with organizations that were in this position, and needed insights on the adoption of M365 Copilot. Feedback and requirements provided by those organizations have been used as an input for the dashboard, within restrictions that provide Graph API at the moment.
+This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to grab data from your M365 tenant.<br/> Some organizations, for various reasons, found existing reports in M365 Admin Portal, Viva insights or Copilot Dashboard not suitable for the purpose of driving adoption, hence there was the need for the custom dashboard. I developed this dashboard working with organizations that were in this position, and needed insights on the adoption of M365 Copilot. Feedback and requirements provided by those organizations have been used as an input for the dashboard, within restrictions that provide Graph API at the moment (this dashboard is not using Audit Logs as data source).
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
 Please provide your feedback or ideas via this [form](https://forms.office.com/r/cFsEWFJ3yD). 
 ## Overview and Functionalities
@@ -35,6 +35,23 @@ This page shows details about users with assigned M365 Copilot license.
 6. Filter per Company, Department or Country - taken from Entra ID.
 7. Table with names and other details based on selection. You can select each user individually to see details in cards 8.
 8. Cards that show last date of usage for M365 Copilot in each tool (if user is active). For inactive users card will be marked in red without any date. [*See known issues](## Known Issues)
+### 3. Readiness
+This page shows details about all users from Microsoft Entra ID (excluding service and external accounts) withouth M365 Copilot License assigned.
+![Screenshot showing overview.](/Images/Dashboard3.png)
+1. Card shows number of Entra ID users (excluding service and external accounts) withouth M365 Copilot License assigned.
+2. Users are distributed in 4 sub categories based how "good" are they in using M365 services (as you want to assign Copilot license to user that is already mature user of M365 rather than to someone who is not yet there):
+   a. Priority A - 11+ points for M365 usage (definition is provided on the page itself)
+   b. Priority B - 4.5 to 10.5 points
+   c. Priority C - less than 4.5 points
+   d. Priority D - 0 points (you really don't want to assign Copilot license to these users)
+3. Slicer to select mentioned categories and show the list in table 4.
+4. Table with names and other details based on selection. You can select each user individually to see details in cards 5.
+5. Cards that show per user usage of some of the M365 Features (Apps - if a user is viewing/editing files in any of apps, Teams Activity - what user does in Teams, OneDrive Activity - what users does with files in their OneDrive)
+### 4. Organization and insights
+This page shows really some overviews per department/company in matrix visual for easier comparison between departments.
+![Screenshot showing overview.](/Images/Dashboard4.png)
+1. Company and Department x usage % per app for Copilot - gives you overview where the most activity in M365 world happens accross the organization
+2. Top 10 users overall by how broadly they use Copilot (not per number of prompts, just per entry points)
 ## Setup Instructions
 You need to do following steps:
 1. Register Graph API app
