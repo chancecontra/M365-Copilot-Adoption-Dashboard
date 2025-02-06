@@ -93,8 +93,8 @@ You need to do following steps:
 4. Wait for data to load.
 5. Replace **Insert Company Logo** image with real logo of your organization. Look for how to insert image in Power BI desktop if you don't know how.
 ![Screenshot showing logo.](/Images/Start2.png)
-6. REQUIRED: Save your file as PBIX. Rembember this is just template loaded with data - until you save the file as pbix.
-7. Optional: Publish and configure daily scheduled refresh. Again look on the internet for details. If you have credential issues make sure they follow these settings and everything should work:
+7. **REQUIRED**: Save your file as PBIX. Rembember this is just template loaded with data - until you save the file as pbix.
+8. Optional: Publish and configure daily scheduled refresh. Again look on the internet for details. If you have credential issues make sure they follow these settings and everything should work:
 ![Screenshot showing credentials.](/Images/Start3.png)   
 ## Known Issues
 1. Due to standard report features - Copilot activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC) - you might notice delays even when refreshing dashboard for some values up to 3 days from the refresh time. 
