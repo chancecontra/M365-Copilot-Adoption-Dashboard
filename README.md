@@ -86,7 +86,7 @@ You need to do following steps:
 ![Screenshot showing Power BI configuration.](/Images/Setup6.png)
 
 ### 3. Download and run the template (.pbit)
-1. Download [template](/M365 Copilot Adoption Dashboard template.pbit).
+1. Download [template](/M365_Copilot_Adoption_Dashboard_template.pbit).
 2. Start template.
 3. Enter required parameters that you collected in step 1. of the setup.
 ![Screenshot showing template.](/Images/Start1.png)
