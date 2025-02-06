@@ -20,6 +20,21 @@ This dashboard contains four pages:
 5. Slicer to show total number of licences or not in Chart 7. (purple line)
 6. Buttons to select if you want to see absolute or % usage values (numbers or %) in Chart 7.
 7. 6 months aggregated historical overview of active users. Axis slider enables zoom in. When using % you can drill down on daily level.
+### 2. Users
+This page shows details about users with assigned M365 Copilot license.
+![Screenshot showing overview.](/Images/Dashboard2.png)
+1. Card shows M365 Copilot enabled users (with license assigned) [*See known issues](## Known Issues)
+2. Enabled users are distributed in 4 sub categories:
+   a. Active Users - the ones that had at least 1 prompt in any of the M365 Copilot interfaces in the last 30 days </br>
+   b. Churned Users - users that had at least 1 prompt in any of the M365 Copilot interfaces in between 30 and 60 days from last refresh time </br>
+   c. Lost Users - users that had at least 1 prompt in any of the M365 Copilot interfaces 60+ days ago from last refresh time </br>
+   d. Enabled but never active - number of users who were assigned M365 Copilot license but they never used it (not a signle prompt) </br>
+3. Slicer to select mentioned categories and show the list in table 7.
+4. Keyword filter (if you are looking for particular user by name)
+5. Slicer to show Champion material (most engaged users by the number of apps where they use Copilot in) In essence they have maturity rating above 5 (see definition for Maturity rating on the page)
+6. Filter per Company, Department or Country - taken from Entra ID.
+7. Table with names and other details based on selection. You can select each user individually to see details in cards 8.
+8. Cards that show last date of usage for M365 Copilot in each tool (if user is active). For inactive users card will be marked in red without any date. [*See known issues](## Known Issues)
 ## Setup Instructions
 You need to do following steps:
 1. Register Graph API app
@@ -55,3 +70,6 @@ You need to do following steps:
 ### 3. Download and run the template (.pbit)
 
 ## Known Issues
+1. Due to standard report features - Copilot activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC) - you might notice delays even when refreshing dashboard for some values up to 3 days from the refresh time. 
+2. Tables that contain users with assigned licenses take some time (unknown) to refresh. Meaning you might remove some licenses from the users and they are still visible on the list of enabled users. How much time this takes (for them to be removed from the table) is not known to me at this point. This is relevant for Users Page.
+3. On the users page you might have situation where certain user has Last Activity Date not empty, while at the same time other cards (Teams, Chat, Outlook...) show empty values. My assumption is that these are users who use Copilot Chat (web) and they don't have M365 Copilot License assigned. Why this happens I still have no confirmation or reasoning behind it, but I will update this once either more details are provided or Graph API is updated with Copilot Chat functions.
