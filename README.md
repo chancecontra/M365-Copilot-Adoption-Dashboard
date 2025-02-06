@@ -6,6 +6,20 @@ This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to 
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
 Please provide your feedback or ideas via this [form](https://forms.office.com/r/cFsEWFJ3yD). 
 ## Overview and Functionalities
+This dashboard contains four pages:
+1. Overview
+2. Users
+3. Readiness
+4. Organization
+### 1. Overview and History
+![Screenshot showing overview.](/Images/Dashboard1.png)
+1. Card shows active users % and total numer of active users in the last 30 days (Active users # is the total number of users with Copilot licence in your organization who tried a user-initiated Microsoft 365 Copilot feature).
+2. Shows user distribution per Copilot usage in different apps (Where the prompt has been triggered from, have in mind single user can run Copilot in different tools so that means same user can contribute to Word and Excel values in the chart)
+3. Top 10 departments in the organization per number of active users (Departments are taken from Entra ID field department)
+4. Slicer for Copilot details in Chart 7.
+5. Slicer to show total number of licences or not in Chart 7. (purple line)
+6. Buttons to select if you want to see absolute or % usage values (numbers or %) in Chart 7.
+7. 6 months aggregated historical overview of active users. Axis slider enables zoom in. When using % you can drill down on daily level.
 ## Setup Instructions
 You need to do following steps:
 1. Register Graph API app
