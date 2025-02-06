@@ -1,6 +1,7 @@
 # M365 Copilot Adoption Dashboard
 Power BI Adoption Dashboard for M365 Copilot.<br/>
 Developed by [Sead Borovina](www.linkedin.com/in/seadb)
+Last version 17 Jan 2025
 ## What it is?
 This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to grab data from your M365 tenant.<br/> Some organizations, for various reasons, found existing reports in M365 Admin Portal, Viva insights or Copilot Dashboard not suitable for the purpose of driving adoption, hence there was the need for the custom dashboard. I developed this dashboard working with organizations that were in this position, and needed insights on the adoption of M365 Copilot. Feedback and requirements provided by those organizations have been used as an input for the dashboard, within restrictions that provide Graph API at the moment (this dashboard is not using Audit Logs as data source).
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
@@ -85,8 +86,20 @@ You need to do following steps:
 ![Screenshot showing Power BI configuration.](/Images/Setup6.png)
 
 ### 3. Download and run the template (.pbit)
-
+1. Download [template](/M365 Copilot Adoption Dashboard template.pbit).
+2. Start template.
+3. Enter required parameters that you collected in step 1. of the setup.
+![Screenshot showing template.](/Images/Start1.png)
+4. Wait for data to load.
+5. Replace **Insert Company Logo** image with real logo of your organization. Look for how to insert image in Power BI desktop if you don't know how.
+![Screenshot showing logo.](/Images/Start2.png)
+6. REQUIRED: Save your file as PBIX. Rembember this is just template loaded with data - until you save the file as pbix.
+7. Optional: Publish and configure daily scheduled refresh. Again look on the internet for details. If you have credential issues make sure they follow these settings and everything should work:
+![Screenshot showing credentials.](/Images/Start3.png)   
 ## Known Issues
 1. Due to standard report features - Copilot activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC) - you might notice delays even when refreshing dashboard for some values up to 3 days from the refresh time. 
 2. Tables that contain users with assigned licenses take some time (unknown) to refresh. Meaning you might remove some licenses from the users and they are still visible on the list of enabled users. How much time this takes (for them to be removed from the table) is not known to me at this point. This is relevant for Users Page.
 3. On the users page you might have situation where certain user has Last Activity Date not empty, while at the same time other cards (Teams, Chat, Outlook...) show empty values. My assumption is that these are users who use Copilot Chat (web) and they don't have M365 Copilot License assigned. Why this happens I still have no confirmation or reasoning behind it, but I will update this once either more details are provided or Graph API is updated with Copilot Chat functions.
+
+## Unknown Issues
+1. I am not quite sure about Graph API limits to query large number of objects (if they exist). There might be some limit for data to be loaded (like I saw somewhere 10000 Entra ID entries, but I cannot confirm or deny this one) Let me know if you know.
