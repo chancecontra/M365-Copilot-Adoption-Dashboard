@@ -107,8 +107,7 @@ You need to take following steps:
 ![Screenshot showing credentials.](/Images/Start3.png)   
 ## Known Issues
 1. Due to standard report features - Copilot activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC) - you might notice delays even when refreshing dashboard for some values up to 3 days from the refresh time. 
-2. Tables that contain users with assigned licenses take some time (unknown) to refresh. Meaning you might remove some licenses from the users, and they are still visible on the list of enabled users. How much time this takes (for them to be removed from the table) is not known to me at this point. This is relevant for the Users Page.
-3. On the users page you might have situation where certain user has Last Activity Date not empty, while at the same time other cards (Teams, Chat, Outlook...) show empty values. My assumption is that these are users who use Copilot Chat (web) and they don't have M365 Copilot License assigned. Why this happens I still have no confirmation or reasoning behind it, but I will update this once either more details are provided, or Graph API is updated with Copilot Chat functions.
+2. On the users page you might have situation where certain user has Last Activity Date not empty, while at the same time other cards (Teams, Chat, Outlook...) show empty values. My assumption is that these are users who use Copilot Chat (web) and they don't have M365 Copilot License assigned. Why this happens I still have no confirmation or reasoning behind it, but I will update this once either more details are provided, or Graph API is updated with Copilot Chat functions.
 
 ## Unknown Issues
 1. I am not quite sure about Graph API limits to query large number of objects (if they exist). There might be some limit for data to be loaded (like I saw somewhere 10000 Entra ID entries, but I cannot confirm or deny this one) Let me know if you know.
