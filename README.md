@@ -1,17 +1,23 @@
 # M365 Copilot Adoption Dashboard
 Power BI Adoption Dashboard for M365 Copilot.<br/>
 Developed by [Sead Borovina](https://www.linkedin.com/in/seadb) </br>
-Last version 17 Jan 2025
+Last version 26 Jun 2025
 ## What it is?
 This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to grab data from your M365 tenant.<br/> Some organizations, for various reasons, found existing reports in M365 Admin Portal, Viva insights or Copilot Dashboard not suitable for the purpose of driving adoption, hence there was the need for the custom dashboard. I developed this dashboard working with organizations that were in this position and needed insights into the adoption of M365 Copilot. Feedback and requirements provided by those organizations have been used as an input for the dashboard, within restrictions that provide Graph API at the moment (this dashboard is not using Audit Logs as data source).
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
 Please provide your feedback or ideas via this [form](https://forms.office.com/r/cFsEWFJ3yD). 
+## Change log
+June 26th 2025:
+- Bug Fix - Users page now shows only currently licensed users. Previous version kept users with removed license which resulted in showing incorrect total number of Copilot users with license and inconsistencies in the report.
+- Readiness score now includes Audio Duration for Teams.
+- Organizational Insights: Copilot vs Non-Copilot Users - new page that replaces previous Organization and insights page. New page contains more relevant behavioral information. Please find details below.
+- Semantic Model - imported email activity user detail (used for org insights).
 ## Overview and Functionalities
 This dashboard contains four pages:
 1. Overview
 2. Users
 3. Readiness
-4. Organization
+4. Organizational Insights: Copilot vs Non-Copilot Users
 ### 1. Overview and History
 ![Screenshot showing overview.](/Images/Dashboard1.png)
 1. Card shows active users % and total number of active users in the last 30 days (Active users # is the total number of users with Copilot license in your organization who tried a user-initiated Microsoft 365 Copilot feature).
@@ -48,11 +54,14 @@ This page shows details about all users from Microsoft Entra ID (excluding servi
 3. Slicer to select mentioned categories and show the list in table 4.
 4. Table with names and other details based on selection. You can select each user individually to see details in cards 5.
 5. Cards that show per user usage of some of the M365 Features (Apps - if a user is viewing/editing files in any of apps, Teams Activity - what user does in Teams, OneDrive Activity - what users do with files in their OneDrive)
-### 4. Organization and insights
-This page shows really some overviews per department/company in matrix visual for easier comparison between departments.
-![Screenshot showing overview.](/Images/Dashboard4.png)
-1. Company and Department x usage % per app for Copilot - gives you an overview of where the most activity in M365 world happens across the organization
-2. Top 10 users overall by how broadly they use Copilot (not per number of prompts, just per entry points)
+### 4. Organizational insights: Copilot vs Non-Copilot Users
+This page shows behaviors of Copilot vs Non-Copilot users for common M365 metrics.
+![Screenshot showing overview.](/Images/Dashboard5.png)
+1. Average values of Teams activities including calls, meetings (organized), channel and chat messages and audio, video and screen share duration for the past 30 days.
+2. Average values of OneDrive activities including viewed/edited files, synced files and shared files for the past 30 days.
+3. Average values of Email activities including emails sent, received and read over the past 30 days.
+4. Copilot license distribution per department - how many users is in each department with copilot license vs total number employees.
+5. Filter for the license distribution stacked bar chart
 ## Setup Instructions
 You need to take following steps:
 1. Register Graph API app
