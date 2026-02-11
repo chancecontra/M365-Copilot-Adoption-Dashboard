@@ -10,8 +10,9 @@ Please provide your feedback or ideas via this [form](https://forms.office.com/r
 February 11th 2026:
 - Bug Fix - Card visual after PBI update shows larger icons than planned - this was fixed
 - Bug Fix - Table 'X' contains a duplicate value '(Unknown)' - fixed (for some reason some graph funcions picked up Unknown for UPN for several users and that caused relationship errors). New version is filtering those values and error is not present any more.
-  If you customized table a lot, and don't want to re-use template fix this error on your own by filtering 4 tables (Teams User Detail, OneDrive Activity User Detail, M365 Apps User Detail and Email User Details) as shown:
+  If you customized table a lot, and don't want to re-use template fix this error on your own by filtering 4 tables (_Teams User Detail, OneDrive Activity User Detail, M365 Apps User Detail_ and _Email User Details_) as shown:
   ![Unknown error fix.](/Images/Unknown.png)
+
 June 26th 2025:
 - Bug Fix - Users page now shows only currently licensed users. Previous version kept users with removed license which resulted in showing incorrect total number of Copilot users with license and inconsistencies in the report.
 - Readiness score now includes Audio Duration for Teams.
