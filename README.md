@@ -1,7 +1,7 @@
 # M365 Copilot Adoption Dashboard
 Power BI Adoption Dashboard for M365 Copilot.<br/>
 Developed by [Sead Borovina](https://www.linkedin.com/in/seadb) </br>
-Last version 22 July 2026
+Last version 23 Oct 2026
 ## What it is?
 This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to grab data from your M365 tenant.<br/> Some organizations, for various reasons, found existing reports in M365 Admin Portal, Viva insights or Copilot Dashboard not suitable for the purpose of driving adoption, hence there was the need for the custom dashboard. I developed this dashboard working with organizations that were in this position and needed insights into the adoption of M365 Copilot. Feedback and requirements provided by those organizations have been used as an input for the dashboard, within restrictions that provide Graph API at the moment (this dashboard is not using Audit Logs as data source).
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
