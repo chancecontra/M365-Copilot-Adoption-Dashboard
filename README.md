@@ -7,6 +7,9 @@ This is custom M365 Copilot Adoption Dashboard that uses Graph API (in beta) to 
 Now you can use this dashboard for M365 Copilot Adoption analysis in your tenant or as a starting point to further develop your own custom dashboard. <br/>
 Please provide your feedback or ideas via this [form](https://forms.office.com/r/cFsEWFJ3yD). 
 ## Change log
+October 23rd 2026:
+- Graph API report functions changed in beta again, this time adding versions and change Dn period. This template is updated with latest beta/reports.
+  
 July 22nd 2026:
 - Graph API report functions changed in beta, so dashboard stopped working. The fix is to replace beta/reports/ with v1.0/copilot/reports/ in the URL used in each of the three queries, keeping the same period parameter and format option.
   
